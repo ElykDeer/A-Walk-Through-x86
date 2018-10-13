@@ -1,0 +1,12 @@
+Answer Key:
+
+Question 1:  "0x00"
+Question 2:  "0x00"
+Question 3:  "0x0000"
+Question 4:  "0x0e74"
+Question 5:  "0x0e61"
+Question 6:  "0x3133333700"
+Question 7:  "0x9000"
+Question 8:  "0xaaa0"
+Question 9:  "0xaaaa"
+Question 10: "0x7ca3"
