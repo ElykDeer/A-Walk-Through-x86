@@ -241,7 +241,7 @@ print_buf:
   db ' ', 0
 print_ax:
   ; our strategy is to build the string of numbers from right to left, using modulo by 10 math, so we're getting to the end of our buffer
-  lea si, [print_buf + 4]  ; <- Question 10!
+  lea si, [print_buf + 4]
   ; I guess it's also worth mentioning what this magical `lea` opcode does... It's sorta witchcraft.
   ; Inside of `[...]` you can have at worst `[reg_1+reg_2*const_1*const_2]`
     ; Where `reg_1` is called the `base`
@@ -264,7 +264,7 @@ print_ax:
     mov byte [si], dl             ; save remainder
     dec si                        ; decrement the buffer address, go to the "next" character
     cmp ax, 0                     ; if rax == 0 exit the loop...if we have exhausted the numberspace
-    jz .check_buf                 ; <- Question 6!
+    jz .check_buf
     jmp .div_loop
 
   .check_buf:
@@ -332,7 +332,7 @@ stack_example:
           call print_info
 
           mov ax, 5
-          push ax  ; <- Question 7 & 8!
+          push ax  ; <- Question 6 & 7!
             call print_ax
             call print_info
 
@@ -352,7 +352,7 @@ stack_example:
     call print_ax
     call print_info  ; As a matter of fact, compilers store all of a function's local variables in the stack.
 
-  pop ax  ; <- Question 9!
+  pop ax  ; <- Question 8!
   call print_ax
   call print_info
 

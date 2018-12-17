@@ -32,23 +32,15 @@ def main():
         return 0
 
     # Question 6
-    if not input_answer("\nIf the value of ax is 0x1337 when `print_ax` is called, what is the value of print_buff after line 267 executes for the last time? (Answer with a five-byte hex value, prefixed with '0x')\n", "0x3133333700"):
-        return 0
-
-    # Question 7
     if not input_answer("\If the value of bp at line 313 is 0x9000 what is the value of bp after line 335 executes? (Answer with a two-byte hex value, prefixed with '0x')\n", "0x9000"):
         return 0
 
-    # Question 8
+    # Question 7
     if not input_answer("\If the value of sp at line 313 is 0xaaaa what is the value of sp after line 335 executes? (Answer with a two-byte hex value, prefixed with '0x')\n", "0xaaa0"):
         return 0
 
-    # Question 9
+    # Question 8
     if not input_answer("\If the value of sp at line 313 is 0xaaaa what is the value of sp after line 335 executes? (Answer with a two-byte hex value, prefixed with '0x')\n", "0xaaaa"):
-        return 0
-
-    # Question 10
-    if not input_answer("\nWhat is the value of si after line 244 executes? (Answer with a two-byte hex value, prefixed with '0x')\n", "0x7ca3"):
         return 0
 
     return 1
